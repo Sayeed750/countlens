@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: countlens-studio
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      - key: YOLO_IMGSZ
+        value: "640"
