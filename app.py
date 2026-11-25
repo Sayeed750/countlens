@@ -22,6 +22,16 @@ def javascript():
     return app.send_static_file('app.js')
 
 
+@app.get('/chapter-algorithms.js')
+def chapter_algorithms():
+    return app.send_static_file('chapter-algorithms.js')
+
+
+@app.get('/chapters.js')
+def chapters_javascript():
+    return app.send_static_file('chapters.js')
+
+
 @app.get('/style.css')
 def stylesheet():
     return app.send_static_file('style.css')
